@@ -1,0 +1,21 @@
+[
+    {
+        "key": "escape",
+        "command": "macros.switchToEditorHidePanes",
+        "when": "panelFocus || terminalFocus "
+    },
+    {
+        "key": "escape",
+        "command": "macros.switchToEditorHidePanes",
+        "when": "editorIsOpen && sideBarVisible"
+    },
+    {
+        "key": "escape",
+        "command": "macros.switchToEditorHidePanes",
+        "when": "activePanel"
+    },
+{
+    "key": "ctrl+w",
+    "command": "workbench.action.closeActiveEditor"
+}
+]

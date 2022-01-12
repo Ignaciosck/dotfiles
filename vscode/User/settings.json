@@ -1,0 +1,252 @@
+{
+    //Autocompletion (Intellisense)
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // Controls if quick suggestions should show up while typing
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": false
+    },
+    // Better comments
+    "better-comments.multilineComments": true,
+    // Auto format.
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    // Controls whether suggestions should be accepted on commit characters.
+    // For example, in JavaScript, the semi-colon (`;`) can be a commit character that accepts a suggestion and types that character.
+    "editor.acceptSuggestionOnCommitCharacter": true,
+    "files.autoSave": "afterDelay",
+    // Controls if suggestions should be accepted on 'Enter' in addition to 'Tab'.
+    // Helps to avoid ambiguity between inserting new lines or accepting suggestions.
+    // The value 'smart' means only accept a suggestion with Enter when it makes a textual change
+    "editor.acceptSuggestionOnEnter": "on",
+    // Controls the delay in ms after which quick suggestions will show up.
+    "editor.quickSuggestionsDelay": 10,
+    // Controls if suggestions should automatically show up when typing trigger characters
+    "editor.suggestOnTriggerCharacters": true,
+    // Controls if pressing tab inserts the best suggestion and if tab cycles through other suggestions
+    "editor.tabCompletion": "off",
+    // Controls whether sorting favours words that appear close to the cursor
+    "editor.suggest.localityBonus": true,
+    // Controls how suggestions are pre-selected when showing the suggest list
+    "editor.suggestSelection": "recentlyUsed",
+    // Enable word based suggestions
+    "editor.wordBasedSuggestions": true,
+    // Enable parameter hints
+    "editor.parameterHints.enabled": true,
+    // No one cares about minimap.
+    "editor.minimap.enabled": false,
+    // Don't restore previous session.
+    "window.restoreWindows": "none",
+    "window.menuBarVisibility": "toggle",
+    "security.workspace.trust.untrustedFiles": "open",
+    "autoHide.autoHidePanel": true,
+    "zenMode.hideLineNumbers": false,
+    "zenMode.fullScreen": false,
+    "zenMode.centerLayout": false,
+    "zenMode.hideStatusBar": false,
+    "zenMode.hideTabs": false,
+    "breadcrumbs.enabled": false,
+    //light
+   
+   
+   
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.colorTheme": "Monokai Pro",
+    "workbench.iconTheme": "Monokai Pro Icons",
+    "window.title": "${activeEditorMedium}${separator}${rootName}",
+    //Sort files by type
+    "explorer.sortOrder": "type",
+    "files.trimFinalNewlines": true,
+    // Cursor blink 
+    "editor.cursorBlinking": "smooth",
+    // Make the cursor not teleport.
+    "editor.cursorSmoothCaretAnimation": true,
+    // Make space character visible
+    "editor.renderWhitespace": "trailing",
+    "editor.lineNumbers": "relative",
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // Basic Sidebar Keybindings
+    "terminal.integrated.commandsToSkipShell": [
+        "macros.switchToEditorHidePanes"
+    ],
+    "macros": {
+        "switchToEditorHidePanes": [
+            "workbench.action.focusActiveEditorGroup",
+            "workbench.action.closePanel",
+            "workbench.action.closeSidebar"
+        ]
+    },
+    // Vim configuration
+    "vim.useCtrlKeys": true,
+    "vim.autoindent": true,
+    "vim.vimrc.enable": true,
+    "vim.vimrc.path": "c:\\Users\\34656\\.vimrc",
+    "vim.useSystemClipboard": true,
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false,
+        "<C-d>": false,
+        "<C-k>": false,
+        // Copy
+        "<C-c>": false,
+        // Cut
+        "<C-x>": false,
+        // Paste
+        "<C-v>": false,
+        "<C-z>": false,
+        "<C-y>": false
+    },
+    // Keybinds 
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<i>"
+            ],
+            "commands": [
+                "workbench.action.nextEditor"
+            ]
+        },
+        {
+            "before": [
+                "<tab>"
+            ],
+            "commands": [
+                "workbench.action.nextEditor"
+            ]
+        },
+        {
+            "before": [
+                "<S-tab>"
+            ],
+            "commands": [
+                "workbench.action.previousEditor"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "m"
+            ],
+            "commands": [
+                "workbench.action.toggleMenuBar"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "q"
+            ],
+            "commands": [
+                "workbench.action.closeActiveEditor"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "e"
+            ],
+            "commands": [
+                "workbench.view.explorer",
+                "workbench.action.focusSideBar",
+                "workbench.action.focusSideBar"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "x"
+            ],
+            "commands": [
+                "workbench.view.extensions",
+                "workbench.action.focusSideBar",
+                "workbench.action.focusSideBar"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "l"
+            ],
+            "commands": [
+                "workbench.action.focusActiveEditorGroup",
+                "workbench.action.toggleSidebarVisibility"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "d"
+            ],
+            "after": [
+                "d",
+                "d"
+            ]
+        },
+        {
+            "before": [
+                "<C-n>"
+            ],
+            "commands": [
+                ":nohl",
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "f"
+            ],
+            "commands": [
+                "revealInExplorer"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "w"
+            ],
+            "commands": [
+                "workbench.action.files.save",
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "d"
+            ],
+            "after": [
+                "d",
+                "d"
+            ]
+        },
+    ],
+    //Python config.
+    "python.formatting.provider": "autopep8",
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "bracket-pair-colorizer-2.depreciation-notice": false,
+    //Font config
+    // "editor.fontFamily": ,
+    "editor.fontFamily": "SF Mono, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontSize": 15,
+    "editor.fontLigatures": true,
+    "editor.lineHeight":0,
+    "editor.fontWeight": "400",
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "comment",
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            }
+        ]
+    },
+    "screencastMode.fontSize": 20,
+    "screencastMode.keyboardOverlayTimeout": 500,
+    "screencastMode.verticalOffset": 10,
+    "editor.codeLensFontFamily": "Consolas",
+}
